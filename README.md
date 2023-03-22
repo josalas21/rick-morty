@@ -19,7 +19,7 @@ To run this project locally, follow these steps:
 
 - Clone the repository to your local machine **`git clone https://github.com/JosueSalasR/rick-morty.git`**
 - Install the dependencies using **`npm install`**
-- Start the development server using **`npm start`**
+- Start the development server using **`npm run dev`**
 
 ## Credits
 
