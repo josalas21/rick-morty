@@ -7,7 +7,7 @@ import {
   LastPageIcon,
 } from "../icons";
 
-function Pagination({ page, setPage }) {
+function Pagination({ page, setPage, max }) {
   return (
     <div class="container mx-auto flex items-center justify-center gap-4 pt-10">
       <IconBtn
@@ -20,16 +20,18 @@ function Pagination({ page, setPage }) {
         action={() => setPage(page - 1)}
         isDisabled={page == 1}
       />
-      <div>{page} of 42</div>
+      <div>
+        {page} of {max}{" "}
+      </div>
       <IconBtn
         icon={<NextPageIcon />}
         action={() => setPage(page + 1)}
-        isDisabled={page == 42}
+        isDisabled={page == max}
       />
       <IconBtn
         icon={<LastPageIcon />}
-        action={() => setPage(42)}
-        isDisabled={page == 42}
+        action={() => setPage(max)}
+        isDisabled={page == max}
       />
     </div>
   );

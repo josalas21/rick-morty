@@ -7,7 +7,7 @@ function CharactersPage() {
 
   return (
     <div class="bg-stone-800 text-white">
-      <Pagination setPage={setPage} page={page} />
+      <Pagination setPage={setPage} page={page} max={42} />
       <CharactersList page={page} />
     </div>
   );
