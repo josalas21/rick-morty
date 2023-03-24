@@ -1,17 +1,24 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Characters, Locations, Home, Layout, Episodes, Error } from "./pages";
+import {
+  CharactersPage,
+  LocationsPage,
+  HomePage,
+  Layout,
+  EpisodesPage,
+  ErrorPage,
+} from "./pages";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="characters" element={<Characters />} />
-        <Route path="locations" element={<Locations />} />
-        <Route path="episodes" element={<Episodes />} />
+        <Route index element={<HomePage />} />
+        <Route path="characters" element={<CharactersPage />} />
+        <Route path="locations" element={<LocationsPage />} />
+        <Route path="episodes" element={<EpisodesPage />} />
       </Route>
-      <Route path="*" element={<Error />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 }

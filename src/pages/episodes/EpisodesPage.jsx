@@ -1,4 +1,4 @@
-function Episodes() {
+function EpisodesPage() {
   return (
     <div>
       <div>Episodes</div>
@@ -6,4 +6,4 @@ function Episodes() {
   );
 }
 
-export default Episodes;
+export default EpisodesPage;

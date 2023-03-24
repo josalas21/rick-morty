@@ -1,6 +1,6 @@
-export { default as Characters } from './characters/Characters';
-export { default as Episodes } from './episodes/Episodes';
-export { default as Error } from './error/Error';
-export { default as Home } from './home/Home';
+export { default as CharactersPage } from './characters/CharactersPage';
+export { default as EpisodesPage } from './episodes/EpisodesPage';
+export { default as ErrorPage } from './error/ErrorPage';
+export { default as HomePage } from './home/HomePage';
 export { default as Layout } from './layout/Layout';
-export { default as Locations } from './locations/Locations';
+export { default as LocationsPage } from './locations/LocationsPage';
