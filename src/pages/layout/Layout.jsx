@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 
 function Layout() {
   return (
-    <div class="bg-zinc-50">
+    <div class="bg-stone-800 h-screen">
       <Navbar />
       <Outlet />
       <h1>Footer</h1>

@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function Navbar() {
   return (
-    <div class="mb-8 flex flex-row flex-wrap gap-10 pt-6 text-center text-stone-800">
+    <div class="pb-6 flex flex-row flex-wrap gap-10 pt-6 text-center text-stone-800 bg-white">
       <div class="basis-full">
         <h1 class="text-5xl font-black sm:text-6xl md:text-7xl">
           Rick and Morty

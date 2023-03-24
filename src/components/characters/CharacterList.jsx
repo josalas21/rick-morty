@@ -11,14 +11,14 @@ function CharactersList({ page }) {
 
   switch (status) {
     case "loading":
-      return <div>Loading...</div>;
+      return ;
     case "error":
       return <div>Error fetching posts: {error.message}</div>;
     case "success":
       const characters = data.results;
       return (
         <div class="bg-stone-800 text-white">
-          <div class="container mx-auto flex flex-wrap justify-center gap-4 py-20">
+          <div class="container mx-auto flex flex-wrap justify-center gap-4 py-10">
             {characters.map((character) => (
               <CharacterCard key={character.id} character={character} />
             ))}
