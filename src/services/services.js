@@ -11,3 +11,8 @@ export const getLocationsByPage = async (page) => {
   const { data } = await axios.get(`${BASE_URL}/location/?page=${page}`);
   return data;
 };
+
+export const getEpisodesByPage = async (page) => {
+  const { data } = await axios.get(`${BASE_URL}/episode/?page=${page}`);
+  return data;
+};

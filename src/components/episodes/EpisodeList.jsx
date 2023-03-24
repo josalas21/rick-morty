@@ -1,12 +1,12 @@
 // todo: loading animation/skeleton
 
 import { useQuery } from "react-query";
-import { getCharactersByPage } from "../../services/services";
-import CharacterCard from "../../components/characters/CharacterCard";
+import { getEpisodesByPage } from "../../services/services";
+import EpisodeCard from "../../components/episodes/EpisodeCard";
 
 function CharactersList({ page }) {
-  const { data: data, status } = useQuery(["characters", { page }], () =>
-    getCharactersByPage(page)
+  const { data: data, status } = useQuery(["episodes", { page }], () =>
+    getEpisodesByPage(page)
   );
 
   switch (status) {
@@ -15,12 +15,12 @@ function CharactersList({ page }) {
     case "error":
       return <div>Error fetching posts: {error.message}</div>;
     case "success":
-      const characters = data.results;
+      const episodes = data.results;
       return (
         <div class="bg-stone-800 text-white">
           <div class="container mx-auto flex flex-wrap justify-center gap-4 py-10">
-            {characters.map((character) => (
-              <CharacterCard key={character.id} character={character} />
+            {episodes.map((episode) => (
+              <EpisodeCard key={episode.id} episode={episode} />
             ))}
           </div>
         </div>

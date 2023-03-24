@@ -1,7 +1,7 @@
 // todo: loading animation/skeleton
 
 import { useQuery } from "react-query";
-import { getLocationsByPage } from "../../services/characters.services";
+import { getLocationsByPage } from "../../services/services";
 import LocationCard from "../../components/locations/LocationCard";
 
 function CharactersList({ page }) {
