@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CharactersList from "../../components/characters/CharacterList";
+import SearchBar from "../../components/search/SearchBar";
 import Pagination from "../../components/pagination/Pagination";
 
 function CharactersPage() {
@@ -7,8 +8,9 @@ function CharactersPage() {
 
   return (
     <div class="bg-stone-800 text-white">
-      <Pagination setPage={setPage} page={page} max={42} />
+      <SearchBar />
       <CharactersList page={page} />
+      <Pagination setPage={setPage} page={page} max={42} />
     </div>
   );
 }

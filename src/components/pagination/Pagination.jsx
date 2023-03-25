@@ -9,7 +9,7 @@ import {
 
 function Pagination({ page, setPage, max }) {
   return (
-    <div class="container mx-auto flex items-center justify-center gap-4 pt-10">
+    <div class="flex items-center justify-center pb-10 gap-4">
       <IconBtn
         icon={<FirstPageIcon />}
         action={() => setPage(1)}
