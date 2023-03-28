@@ -1,6 +1,6 @@
-import img1 from "../public/img1.jpeg";
-import img2 from "../public/img2.webp";
-import img3 from "../public/img3.jpeg";
+import img1 from './assets/images/img1.jpeg';
+import img2 from './assets/images/img2.webp';
+import img3 from './assets/images/img3.jpeg';
 
 export const HOME_CONTENT = [
   {
