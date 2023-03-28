@@ -1,21 +1,14 @@
-// todo: loading animation/skeleton
+import { Loader, Error, CharacterCard } from "../../components";
 
-import { useQuery } from "react-query";
-import { getCharactersByPage } from "../../services/services";
-import CharacterCard from "../../components/characters/CharacterCard";
-
-function CharactersList({ page }) {
-  const { data: data, status } = useQuery(["characters", { page }], () =>
-    getCharactersByPage(page)
-  );
+function CharacterList({ data, status, filteredName }) {
+  const characters = data?.results;
 
   switch (status) {
     case "loading":
-      return ;
+      return <Loader />;
     case "error":
-      return <div>Error fetching posts: {error.message}</div>;
+      return <Error filteredName={filteredName} />;
     case "success":
-      const characters = data.results;
       return (
         <div class="bg-stone-800 text-white">
           <div class="container mx-auto flex flex-wrap justify-center gap-4 py-10">
@@ -27,5 +20,4 @@ function CharactersList({ page }) {
       );
   }
 }
-
-export default CharactersList;
+export default CharacterList;

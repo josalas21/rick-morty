@@ -1,15 +1,14 @@
 import IconBtn from "./IconBtn";
-
 import {
   FirstPageIcon,
   PrevPageIcon,
   NextPageIcon,
   LastPageIcon,
-} from "../icons";
+} from "../../assets";
 
 function Pagination({ page, setPage, max }) {
   return (
-    <div class="flex items-center justify-center pb-10 gap-4">
+    <div class="flex items-center justify-center gap-4 pb-10">
       <IconBtn
         icon={<FirstPageIcon />}
         action={() => setPage(1)}
@@ -21,7 +20,7 @@ function Pagination({ page, setPage, max }) {
         isDisabled={page == 1}
       />
       <div>
-        {page} of {max}{" "}
+        {page} of {max}
       </div>
       <IconBtn
         icon={<NextPageIcon />}

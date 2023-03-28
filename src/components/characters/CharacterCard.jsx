@@ -13,10 +13,10 @@ function CharacterCard({ character }) {
         <br />
         <span class="flex basis-full text-gray-400">Last know location:</span>
         <br />
-        <span>{character.location.name}</span> <br />
+        <span>{character.location?.name}</span> <br />
         <span class="flex basis-full text-gray-400">First seen in:</span>
         <br />
-        <span class="flex basis-full ">{character.origin.name}</span>
+        <span class="flex basis-full ">{character.origin?.name}</span>
         <br />
       </div>
     </div>

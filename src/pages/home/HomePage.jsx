@@ -1,4 +1,4 @@
-import HomeCard from "../../components/home/HomeCard";
+import { HomeCard } from "../../components";
 import { HOME_CONTENT as data } from "../../constants";
 
 function HomePage() {

@@ -1,21 +1,14 @@
-// todo: loading animation/skeleton
+import { EpisodeCard, Error, Loader } from "../../components";
 
-import { useQuery } from "react-query";
-import { getEpisodesByPage } from "../../services/services";
-import EpisodeCard from "../../components/episodes/EpisodeCard";
-
-function CharactersList({ page }) {
-  const { data: data, status } = useQuery(["episodes", { page }], () =>
-    getEpisodesByPage(page)
-  );
+function CharactersList({ data, status, filteredName }) {
+  const episodes = data?.results;
 
   switch (status) {
     case "loading":
-      return ;
+      return <Loader />;
     case "error":
-      return <div>Error fetching posts: {error.message}</div>;
+      return <Error filteredName={filteredName} />;
     case "success":
-      const episodes = data.results;
       return (
         <div class="bg-stone-800 text-white">
           <div class="container mx-auto flex flex-wrap justify-center gap-4 py-10">

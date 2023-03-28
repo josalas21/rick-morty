@@ -1,15 +1,13 @@
-// todo: integrate search functionality and filters
-function SearchBar() {
+function SearchBar({ handleFilteredNames, items = 0 }) {
   return (
-    <form class="flex items-center justify-center gap-8 mt-10">
+    <form class="mt-10 flex flex-wrap items-center justify-center gap-8">
       <input
         type="text"
         class="h-12 w-96 rounded-lg border-gray-400 pl-10 pr-20 text-black focus:border focus:outline-none"
         placeholder="Search anything..."
+        onChange={handleFilteredNames}
       />
-      <button class="h-12 w-20 rounded-lg border border-white text-white hover:bg-white hover:text-stone-800">
-        Search
-      </button>
+      <div class="h-13 text-sm text-gray-300">{items} items found</div>
     </form>
   );
 }

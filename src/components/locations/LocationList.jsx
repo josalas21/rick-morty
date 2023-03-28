@@ -1,21 +1,14 @@
-// todo: loading animation/skeleton
+import { Error, Loader, LocationCard } from "../../components";
 
-import { useQuery } from "react-query";
-import { getLocationsByPage } from "../../services/services";
-import LocationCard from "../../components/locations/LocationCard";
-
-function CharactersList({ page }) {
-  const { data: data, status } = useQuery(["locations", { page }], () =>
-    getLocationsByPage(page)
-  );
-
+function CharactersList({ data, status, filteredName }) {
+  const locations = data?.results;
+  
   switch (status) {
     case "loading":
-      return ;
+      return <Loader />;
     case "error":
-      return <div>Error fetching posts: {error.message}</div>;
+      return <Error filteredName={filteredName} />;
     case "success":
-      const locations = data.results;
       return (
         <div class="bg-stone-800 text-white">
           <div class="container mx-auto flex flex-wrap justify-center gap-4 py-10">

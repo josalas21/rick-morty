@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../../components/navbar/Navbar";
+import { Navbar } from "../../components";
 
 function Layout() {
   return (
-    <div class="bg-stone-800 h-screen">
+    <div class="h-screen bg-stone-800">
       <Navbar />
       <Outlet />
       <h1>Footer</h1>
