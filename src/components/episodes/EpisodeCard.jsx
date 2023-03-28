@@ -1,6 +1,6 @@
 function EpisodeCard({ episode }) {
   return (
-    <div class="flex h-[190px] w-[350px] rounded-md bg-zinc-700">
+    <div class="flex h-[190px] w-[350px] rounded-md bg-zinc-700 hover:bg-gray-800">
       <div class="container flex flex-wrap p-4">
         <span class="flex basis-full text-xl font-extrabold">
           {episode.name}

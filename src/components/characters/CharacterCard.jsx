@@ -1,6 +1,6 @@
 function CharacterCard({ character }) {
   return (
-    <div class="flex h-[220px] w-[550px] rounded-md bg-zinc-700">
+    <div class="flex h-[220px] w-[550px] rounded-md bg-zinc-700 hover:bg-gray-800">
       <img class="rounded-l-md" src={character.image} alt={character.name} />
       <div class="container flex flex-wrap p-4">
         <span class="flex basis-full text-2xl font-extrabold">
