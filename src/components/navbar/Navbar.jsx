@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div class="flex flex-row flex-wrap gap-10 bg-white pb-6 pt-6 text-center text-stone-800">
       <div class="basis-full">
-        <h1 class="text-5xl font-black sm:text-6xl md:text-7xl">
+        <h1 class="bg-gradient-to-r from-stone-700 to-gray-500 bg-clip-text text-5xl font-black text-transparent sm:text-6xl md:text-7xl">
           Rick and Morty
         </h1>
       </div>

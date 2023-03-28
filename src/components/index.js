@@ -3,6 +3,7 @@ export { default as CharacterList } from './characters/CharacterList';
 export { default as EpisodeCard } from './episodes/EpisodeCard';
 export { default as EpisodeList } from './episodes/EpisodeList';
 export { default as Error } from './error/Error';
+export { default as Footer } from './footer/Footer';
 export { default as HomeCard } from './home/HomeCard';
 export { default as Loader } from './loader/Loader';
 export { default as LocationCard } from './locations/LocationCard';
