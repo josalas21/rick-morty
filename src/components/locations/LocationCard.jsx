@@ -1,6 +1,6 @@
 function LocationCard({ location }) {
   return (
-    <div class="flex h-[170px] w-[300px] rounded-md bg-zinc-700 hover:bg-gray-800">
+    <div class="flex h-[170px] w-[300px] rounded-md bg-[#14213d]">
       <div class="container flex flex-wrap p-4">
         <span class="flex basis-full text-xl font-extrabold">
           {location.name}

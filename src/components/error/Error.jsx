@@ -1,8 +1,8 @@
 function Error({ filteredName }) {
   return (
-    <div class="container mx-auto flex h-60 content-center text-center text-3xl">
-      <span class="mx-auto self-center text-center">
-        Characters cannot be found with: {filteredName}
+    <div class=" flex h-60 w-full content-center bg-[#8d99ae] text-center text-3xl">
+      <span class="mx-auto w-full self-center text-center">
+        Items cannot be found with: {filteredName}
       </span>
     </div>
   );

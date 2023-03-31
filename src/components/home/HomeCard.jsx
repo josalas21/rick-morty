@@ -1,6 +1,6 @@
 function HomeCard({ subtitle, content, img }) {
   return (
-    <div class="flex h-[620px] w-[380px] flex-wrap bg-zinc-700 hover:bg-gray-800">
+    <div class="flex h-[620px] w-[380px] flex-wrap bg-[#14213d]">
       <a href="#">
         <img class="h-[240px] w-[380px]" src={img} alt="" />
       </a>

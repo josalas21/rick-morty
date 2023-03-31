@@ -3,7 +3,7 @@ function IconBtn({ action, icon, isDisabled }) {
     <button
       type="button"
       onClick={action}
-      class="rounded-full border p-2 enabled:hover:bg-white enabled:hover:text-black disabled:opacity-75"
+      class="rounded-full border border-[#14213d] p-2 text-[#14213d] enabled:hover:bg-[#14213d] enabled:hover:text-white disabled:opacity-75"
       disabled={isDisabled}
     >
       {icon}

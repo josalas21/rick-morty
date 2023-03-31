@@ -8,7 +8,7 @@ function ErrorPage() {
         Page Not Found
       </div>
       <button class="mt-5">
-        <a class="group relative inline-block text-sm font-medium text-[#FF6A3D] focus:outline-none focus:ring active:text-orange-500">
+        <a class="group relative inline-block text-sm font-medium text-[#FF6A3D] focus:outline-none focus:ring active:text-orange-700">
           <span class="relative block border border-current bg-[#1A2238] px-8 py-3">
             <Button path="/" name="HOME" />
           </span>
