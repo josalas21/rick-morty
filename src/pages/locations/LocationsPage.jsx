@@ -22,7 +22,7 @@ function LocationsPage() {
     : useQuery(["locations", { page }], () => getDataByPage(section, page));
 
   return (
-    <div class="bg-[#e5e5e5] text-white">
+    <div>
       <SearchBar
         handleFilteredNames={handleFilteredNames}
         items={data?.info.count}

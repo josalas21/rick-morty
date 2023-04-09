@@ -8,7 +8,7 @@ import {
 
 function Pagination({ page, setPage, max }) {
   return (
-    <div class="flex items-center justify-center gap-4 bg-[#8d99ae] pb-10 ">
+    <div class="flex items-center justify-center gap-4 bg-[#EBEEF2] pb-10 ">
       <IconBtn
         icon={<FirstPageIcon />}
         action={() => setPage(1)}
@@ -19,7 +19,7 @@ function Pagination({ page, setPage, max }) {
         action={() => setPage(page - 1)}
         isDisabled={page == 1}
       />
-      <div class="text-[#14213d]">
+      <div class="text-cyan-800">
         {page} of {max}
       </div>
       <IconBtn

@@ -3,7 +3,7 @@ import { HOME_CONTENT as data } from "../../constants";
 
 function HomePage() {
   return (
-    <div class=" mx-auto flex flex-row flex-wrap justify-center gap-4 bg-[#8d99ae] py-10 text-white ">
+    <div class=" mx-auto flex flex-row flex-wrap justify-center gap-4 bg-[#EBEEF2] py-10 ">
       {data.map((item) => (
         <HomeCard
           subtitle={item.subtitle}

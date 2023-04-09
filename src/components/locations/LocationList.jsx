@@ -10,7 +10,7 @@ function CharactersList({ data, status, filteredName }) {
       return <Error filteredName={filteredName} />;
     case "success":
       return (
-        <div class="bg-[#8d99ae] text-white">
+        <div class="bg-[#EBEEF2]">
           <div class="container mx-auto flex flex-wrap justify-center gap-4 py-10">
             {locations.map((location) => (
               <LocationCard key={location.id} location={location} />

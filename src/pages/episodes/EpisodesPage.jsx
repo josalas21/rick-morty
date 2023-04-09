@@ -22,7 +22,7 @@ function EpisodesPage() {
     : useQuery(["locations", { page }], () => getDataByPage(section, page));
 
   return (
-    <div class="bg-stone-800 text-white">
+    <div>
       {console.log(filteredName, isFiltered)}
       <SearchBar
         handleFilteredNames={handleFilteredNames}

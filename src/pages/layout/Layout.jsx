@@ -3,7 +3,7 @@ import { Footer, Navbar } from "../../components";
 
 function Layout() {
   return (
-    <div class="h-screen bg-[#8d99ae]">
+    <div class="h-screen bg-[#EBEEF2]">
       <Navbar />
       <Outlet />
       <Footer />
