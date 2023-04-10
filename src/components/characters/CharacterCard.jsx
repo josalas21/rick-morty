@@ -1,5 +1,3 @@
-import Iframe from "../loader/Iframe";
-
 function CharacterCard({ character }) {
   return (
     <div class="flex h-[14rem] w-[34rem] rounded-md border-2 border-cyan-600 bg-[#EBEEF2] font-light ">
