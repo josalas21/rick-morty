@@ -13,7 +13,7 @@ function Navbar() {
       <div class="flex basis-full justify-center">
         <img src={logo} alt="logo" className="w-72" />
       </div>
-      <div class="flex basis-full justify-around text-lg font-bold sm:text-xl md:text-2xl ">
+      <div class="flex basis-full justify-around font-bold sm:text-xl md:text-2xl ">
         <Button path="/" name="HOME" />
         <Button path="/characters" name="CHARACTERS" />
         <Button path="/locations" name="LOCATIONS" />

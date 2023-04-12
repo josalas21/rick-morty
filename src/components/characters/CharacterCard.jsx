@@ -1,14 +1,14 @@
 function CharacterCard({ character }) {
   return (
-    <div class="flex h-[14rem] w-[34rem] rounded-md border-2 border-cyan-600 bg-[#EBEEF2] font-light ">
+    <div class="flex h-[9rem] w-[21rem] rounded-md border-2 border-cyan-600 bg-[#EBEEF2] text-xs font-light md:h-[14rem] md:w-[34rem] md:text-base">
       <img
         class="rounded-l-md"
         src={character.image}
         alt={character.name}
         loading="lazy"
       />
-      <div class="container flex flex-wrap p-4">
-        <span class="flex basis-full text-2xl font-extrabold text-cyan-800">
+      <div class="container flex flex-wrap p-1 md:p-4">
+        <span class="flex basis-full text-sm font-extrabold text-cyan-800 md:text-2xl">
           {character.name}
         </span>
         <br />
