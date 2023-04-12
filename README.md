@@ -2,6 +2,8 @@
 
 This is a web application that displays information about characters, episodes, and locations from the popular TV show Rick and Morty.
 
+- [Demo](https://rick-morty-josalas21.vercel.app)
+
 ## Technologies
 
 - React
