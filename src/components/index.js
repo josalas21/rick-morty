@@ -5,7 +5,6 @@ export { default as EpisodeList } from "./episodes/EpisodeList";
 export { default as Error } from "./error/Error";
 export { default as Footer } from "./footer/Footer";
 export { default as HomeCard } from "./home/HomeCard";
-export { default as Iframe } from "./loader/Iframe";
 export { default as Loader } from "./loader/Loader";
 export { default as LocationCard } from "./locations/LocationCard";
 export { default as LocationList } from "./locations/LocationList";

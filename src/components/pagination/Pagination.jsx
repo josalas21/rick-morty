@@ -8,7 +8,7 @@ import {
 
 function Pagination({ page, setPage, max }) {
   return (
-    <div class="flex items-center justify-center gap-4 bg-[#EBEEF2] pb-10 ">
+    <div className="flex items-center justify-center gap-4 bg-[#EBEEF2] pb-10 ">
       <IconBtn
         icon={<FirstPageIcon />}
         action={() => setPage(1)}

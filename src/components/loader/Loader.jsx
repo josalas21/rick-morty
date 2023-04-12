@@ -4,7 +4,7 @@ const Loader = () => {
   return (
     <div
       role="status"
-      class="flex h-80 w-screen items-center justify-center bg-[#EBEEF2]"
+      className="flex h-80 w-screen items-center justify-center bg-[#EBEEF2]"
     >
       <Spinner />
     </div>
